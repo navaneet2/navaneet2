@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dashboardAnimateVM" type="com.flightsexpert.app.modules.dashboardanimate.data.viewmodel.DashboardAnimateVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtFlightSExper"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{dashboardAnimateVM.dashboardAnimateModel.txtFlightSExper}" style="@style/textStyleMontserratbold36"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/line"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_3px"
+                android:layout_marginTop="@dimen/_13px" android:layout_width="match_parent"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frame"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10px" android:layout_width="match_parent">
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtKnow"
+                android:layout_gravity="center|start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@{dashboardAnimateVM.dashboardAnimateModel.txtKnow}" style="@style/textStyleMontserratbold60"/>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtAbout"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_37px"
+                android:layout_width="wrap_content"
+                android:text="@{dashboardAnimateVM.dashboardAnimateModel.txtAbout}" style="@style/textStyleMontserratbold36_1"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frame1"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <FrameLayout
+                android:background="@drawable/rectangle_bg_cyan_600_radius_40"
+                android:id="@+id/frame2" android:layout_gravity="center"
+                android:layout_height="@dimen/_86px" android:layout_width="@dimen/_336px"/>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtAirIndia"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{dashboardAnimateVM.dashboardAnimateModel.txtAirIndia}" style="@style/textStyleMontserratbold62"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_141px"
+            android:layout_marginStart="@dimen/_4px"
+            android:layout_marginTop="@dimen/_43px"
+            android:layout_width="@dimen/_348px"
+            android:scaleType="centerCrop" imageRes="@{@drawable/img_cc1b5cc47b7247cc84a9ac6f6c13a202916x515removebgpreview_1}"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:clickable="true" android:gravity="center"
+            android:id="@+id/btnClickHere" android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32px"
+            android:layout_marginTop="@dimen/_45px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_19px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_12px"
+            android:text="@string/lbl_click_here" style="@style/textStyleMontserratbold18_1"/>
+    </LinearLayout>
+</layout>

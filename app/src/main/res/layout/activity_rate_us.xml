@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="rateUsVM" type="com.flightsexpert.app.modules.rateus.data.viewmodel.RateUsVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:gravity="center|start"
+            android:id="@+id/txtDoRateUs" android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@{rateUsVM.rateUsModel.txtDoRateUs}" style="@style/textStyleMontserratbold48_1"/>
+        <FrameLayout android:id="@+id/frame"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9px"
+            android:layout_marginTop="@dimen/_11px" android:layout_width="match_parent">
+            <androidx.appcompat.widget.AppCompatButton
+                android:clickable="true" android:gravity="center"
+                android:id="@+id/btnClickHere"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_80px"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_19px"
+                android:paddingEnd="@dimen/_30px"
+                android:paddingStart="@dimen/_30px"
+                android:paddingTop="@dimen/_12px"
+                android:text="@string/lbl_click_here" style="@style/textStyleMontserratbold18"/>
+            <ImageView android:id="@+id/image"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_179px"
+                android:layout_marginBottom="@dimen/_80px"
+                android:layout_marginStart="@dimen/_1px"
+                android:layout_marginTop="@dimen/_32px"
+                android:layout_width="@dimen/_315px"
+                android:scaleType="centerCrop" imageRes="@{@drawable/img_1392100588removebgpreview_1}"/>
+            <ImageView android:id="@+id/image1"
+                android:layout_gravity="center|end"
+                android:layout_height="@dimen/_338px"
+                android:layout_width="@dimen/_236px" imageRes="@{@drawable/img_humaaans_sitting2}"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

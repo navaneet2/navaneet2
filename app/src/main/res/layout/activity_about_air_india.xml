@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutAirIndiaVM" type="com.flightsexpert.app.modules.aboutairindia.data.viewmodel.AboutAirIndiaVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <HorizontalScrollView android:fillViewport="true"
+            android:id="@+id/horizontalScroll"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <FrameLayout android:id="@+id/frame"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:layout_width="wrap_content">
+                <FrameLayout android:background="@color/teal_300_ce"
+                    android:id="@+id/frame1"
+                    android:layout_gravity="center|end"
+                    android:layout_height="@dimen/_251px" android:layout_width="@dimen/_250px"/>
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center|end"
+                    android:layout_height="@dimen/_253px"
+                    android:layout_width="@dimen/_522px"
+                    android:scaleType="centerCrop" imageRes="@{@drawable/img_airindiaremovebgpreview_1_1}"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:gravity="center"
+                    android:id="@+id/btnAirIndia"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_80px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_air_india" style="@style/textStyleMontserratbold48"/>
+            </FrameLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView android:fillViewport="true"
+            android:id="@+id/horizontalScroll1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <FrameLayout android:id="@+id/frame2"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2px" android:layout_width="wrap_content">
+                <TextView android:gravity="center|start"
+                    android:id="@+id/txtAirIndiaForm"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{aboutAirIndiaVM.aboutAirIndiaModel.txtAirIndiaForm}" style="@style/textStyleMontserratmedium22"/>
+                <View android:background="@color/cyan_700"
+                    android:id="@+id/line"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_3px"
+                    android:layout_marginBottom="@dimen/_80px"
+                    android:layout_marginTop="@dimen/_8px" android:layout_width="@dimen/_220px"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true" android:gravity="center"
+                    android:id="@+id/btnKnowMore"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_31px"
+                    android:layout_marginTop="@dimen/_80px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_12px"
+                    android:text="@string/lbl_know_more" style="@style/textStyleMontserratbold18"/>
+            </FrameLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</layout>

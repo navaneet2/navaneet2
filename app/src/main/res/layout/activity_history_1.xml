@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="history1VM" type="com.flightsexpert.app.modules.history1.data.viewmodel.History1VM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <androidx.appcompat.widget.AppCompatButton
+                android:gravity="center" android:id="@+id/btnHistory"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/lbl_history" style="@style/textStyleMontserratbold36"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/line"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_3px"
+                android:layout_marginTop="@dimen/_10px" android:layout_width="match_parent"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_229px"
+            android:layout_marginStart="@dimen/_4px"
+            android:layout_marginTop="@dimen/_18px"
+            android:layout_width="@dimen/_330px"
+            android:scaleType="centerCrop" imageRes="@{@drawable/img_330pxvintagephotographofanairindiaplane_1_1}"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnVintagePhotogr"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17px"
+            android:layout_marginStart="@dimen/_17px"
+            android:layout_marginTop="@dimen/_74px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_vintage_photogr" style="@style/textStyleMontserratbold36_1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:clickable="true" android:gravity="center"
+            android:id="@+id/btnNext"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_80px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_17px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_10px"
+            android:text="@string/lbl_next" style="@style/textStyleMontserratbold18"/>
+    </LinearLayout>
+</layout>

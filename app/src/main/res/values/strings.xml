@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Flights Expert</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_thank_you">Thank you!</string>
+<string name="lbl_click_here">Click here</string>
+<string name="lbl_do_rate_us">Do Rate us !</string>
+<string name="lbl_next">Next</string>
+<string name="lbl_history">History</string>
+<string name="lbl_2014_now">2014-now</string>
+<string name="lbl_about">ABOUT</string>
+<string name="lbl_2007">2007</string>
+<string name="lbl_air_india">Air India</string>
+<string name="lbl_login">Login</string>
+<string name="msg_as_of_december">As of December 2019, Air India flies to a total of 102 destinations including 57 domestic destinations and 45 international destinations in 31 countries across five continents around the world.</string>
+<string name="msg_what_do_you_kno">What do you know about
+Air india?</string>
+<string name="msg_current_destina">Current destinations</string>
+<string name="lbl_1947_2007">1947-2007</string>
+<string name="msg_flightexpert_gm">Flightexpert@gmail.com</string>
+<string name="lbl_india">India</string>
+<string name="lbl_welcome_back">Welcome
+Back !</string>
+<string name="lbl_get_started">Get started</string>
+<string name="msg_flight_s_exper">Flight ‘s Expert</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_know">KNOW</string>
+<string name="msg_forgot_password">Forgot Password?</string>
+<string name="msg_previously_serv">Previously served countries</string>
+<string name="lbl_know_more">Know More</string>
+<string name="lbl_destinations">Destinations</string>
+<string name="lbl">..............</string>
+<string name="msg_air_india_form">Air India, formerly Air-India, airline founded in 1932 (as Tata Airlines) that grew into an international airline owned by the Indian government; it serves southern and east Asia, the Middle East, Europe, Africa, the United States, and Canada. Headquarters are in Bombay (Mumbai).</string>
+<string name="msg_vintage_photogr">Vintage photograph of an Air India plane</string>
+<string name="msg_evolution_of_ai">Evolution of Air India LOGO</string>
+</resources>
