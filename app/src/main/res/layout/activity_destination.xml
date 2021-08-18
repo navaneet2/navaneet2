@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="destinationVM" type="com.flightsexpert.app.modules.destination.data.viewmodel.DestinationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnDestinations"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_26px"
+            android:layout_width="match_parent"
+            android:text="@string/lbl_destinations" style="@style/textStyleMontserratbold36"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <HorizontalScrollView android:fillViewport="true"
+                android:id="@+id/horizontalScroll"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:scrollbars="none">
+                <FrameLayout android:id="@+id/frame"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content">
+                    <ImageView android:id="@+id/image"
+                        android:layout_gravity="center|end"
+                        android:layout_height="@dimen/_292px"
+                        android:layout_width="@dimen/_392px"
+                        android:scaleType="centerCrop" imageRes="@{@drawable/img_330pxvintagephotographofanairindiaplane_1}"/>
+                    <View android:background="@color/cyan_700"
+                        android:id="@+id/line"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_2px"
+                        android:layout_marginBottom="@dimen/_80px"
+                        android:layout_marginStart="@dimen/_27px"
+                        android:layout_marginTop="@dimen/_9px" android:layout_width="@dimen/_230px"/>
+                    <FrameLayout android:background="@color/red_A700"
+                        android:id="@+id/frame1"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_26px"
+                        android:layout_marginBottom="@dimen/_39px"
+                        android:layout_marginStart="@dimen/_45px"
+                        android:layout_marginTop="@dimen/_80px" android:layout_width="@dimen/_24px"/>
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txtCurrentDestina"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_40px"
+                        android:layout_width="wrap_content"
+                        android:text="@{destinationVM.destinationModel.txtCurrentDestina}" style="@style/textStyleMontserratbold18_2"/>
+                    <FrameLayout android:background="@color/pink_100"
+                        android:id="@+id/frame2"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_26px"
+                        android:layout_marginStart="@dimen/_45px"
+                        android:layout_marginTop="@dimen/_80px" android:layout_width="@dimen/_24px"/>
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txtPreviouslyServ"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4px"
+                        android:layout_marginEnd="@dimen/_19px"
+                        android:layout_marginTop="@dimen/_80px"
+                        android:layout_width="match_parent"
+                        android:text="@{destinationVM.destinationModel.txtPreviouslyServ}" style="@style/textStyleMontserratbold18_2"/>
+                </FrameLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frame3"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_2px"
+            android:layout_marginTop="@dimen/_13px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_80px"
+                android:layout_marginStart="@dimen/_13px"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <FrameLayout android:background="@color/yellow_800"
+                    android:id="@+id/frame4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_26px" android:layout_width="@dimen/_24px"/>
+                <TextView android:gravity="center|start"
+                    android:id="@+id/txtIndia"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_11px"
+                    android:layout_width="wrap_content"
+                    android:text="@{destinationVM.destinationModel.txtIndia}" style="@style/textStyleMontserratbold18_2"/>
+            </LinearLayout>
+            <TextView android:gravity="center|start"
+                android:id="@+id/txtAsOfDecember"
+                android:layout_gravity="center|start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{destinationVM.destinationModel.txtAsOfDecember}" style="@style/textStyleMontserratbold18_3"/>
+            <ImageView android:clickable="true" android:id="@+id/image1"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_55px"
+                android:layout_marginTop="@dimen/_80px"
+                android:layout_width="@dimen/_61px"
+                android:scaleType="centerCrop" imageRes="@{@drawable/img_next_page}"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

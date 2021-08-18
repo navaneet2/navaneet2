@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="evolutionOfLogoVM" type="com.flightsexpert.app.modules.evolutionoflogo.data.viewmodel.EvolutionOfLogoVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <androidx.appcompat.widget.AppCompatButton
+                android:gravity="center"
+                android:id="@+id/btnEvolutionOfAi"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/msg_evolution_of_ai" style="@style/textStyleMontserratbold36"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/line"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_3px" android:layout_width="match_parent"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frame"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17px" android:layout_width="match_parent">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt19472007"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_80px"
+                android:layout_marginStart="@dimen/_23px"
+                android:layout_width="wrap_content"
+                android:text="@{evolutionOfLogoVM.evolutionOfLogoModel.txt19472007}" style="@style/textStyleRufinabold24"/>
+            <ImageView android:id="@+id/image"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_153px"
+                android:layout_width="@dimen/_175px"
+                android:scaleType="centerCrop" imageRes="@{@drawable/img_airindialogo1946768x439_1}"/>
+            <ImageView android:id="@+id/image1"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_51px"
+                android:layout_marginBottom="@dimen/_80px"
+                android:layout_marginEnd="@dimen/_50px"
+                android:layout_marginTop="@dimen/_80px"
+                android:layout_width="@dimen/_75px"
+                android:scaleType="centerCrop" imageRes="@{@drawable/img_thick_arrow_pointing_down}"/>
+            <ImageView android:id="@+id/image2"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_116px"
+                android:layout_width="@dimen/_266px"
+                android:scaleType="centerCrop" imageRes="@{@drawable/img_airindialogo2007768x384_1}"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt2007"
+                android:layout_gravity="center|start"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_31px"
+                android:layout_width="wrap_content"
+                android:text="@{evolutionOfLogoVM.evolutionOfLogoModel.txt2007}" style="@style/textStyleRufinabold24"/>
+            <ImageView android:id="@+id/image3"
+                android:layout_gravity="center|end"
+                android:layout_height="@dimen/_51px"
+                android:layout_marginEnd="@dimen/_50px"
+                android:layout_width="@dimen/_75px"
+                android:scaleType="centerCrop" imageRes="@{@drawable/img_thick_arrow_pointing_down}"/>
+            <HorizontalScrollView android:fillViewport="true"
+                android:id="@+id/horizontalScroll"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:scrollbars="none">
+                <FrameLayout android:id="@+id/frame1"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_40px"
+                    android:layout_width="wrap_content" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image4"
+                        android:layout_gravity="center|end"
+                        android:layout_height="@dimen/_182px"
+                        android:layout_width="@dimen/_384px"
+                        android:scaleType="centerCrop" imageRes="@{@drawable/img_airindialogo768x384_1}"/>
+                    <FrameLayout android:id="@+id/frame2"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_80px"
+                        android:layout_marginStart="@dimen/_27px"
+                        android:layout_marginTop="@dimen/_12px" android:layout_width="wrap_content">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txt2014Now"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:text="@{evolutionOfLogoVM.evolutionOfLogoModel.txt2014Now}" style="@style/textStyleRufinabold24"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </HorizontalScrollView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:clickable="true" android:gravity="center"
+                android:id="@+id/btnNext"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_40px"
+                android:layout_marginTop="@dimen/_80px"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_17px"
+                android:paddingEnd="@dimen/_30px"
+                android:paddingStart="@dimen/_30px"
+                android:paddingTop="@dimen/_10px"
+                android:text="@string/lbl_next" style="@style/textStyleMontserratbold18"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="textStyleMontserratbold60" parent="textStyleMontserratbold36_1">
+        <item name="android:textSize">@dimen/_60px</item>
+    </style>
+    <style name="textStyleMontserratbold62">
+        <item name="android:textSize">@dimen/_62px</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="textStyleMontserratbold18_3" parent="textStyleMontserratbold48">
+        <item name="android:textSize">@dimen/_18px</item>
+    </style>
+    <style name="textStyleMontserratbold18_2" parent="textStyleMontserratbold18_3">
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="textStyleMontserratmedium22">
+        <item name="android:textSize">@dimen/_22px</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="textStylePhilosopherregular20">
+        <item name="android:textSize">@dimen/_20px</item>
+        <item name="android:textColor">@color/cyan_700</item>
+        <item name="android:fontFamily">@font/philosopher</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="textStyleMontserratbold36" parent="textStyleMontserratbold36_1">
+        <item name="android:textColor">@color/cyan_700</item>
+    </style>
+    <style name="textStyleRufinabold24">
+        <item name="android:textSize">@dimen/_24px</item>
+        <item name="android:textColor">@color/cyan_700</item>
+        <item name="android:fontFamily">@font/rufina</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="textStyleMontserratbold48" parent="textStyleMontserratbold48_1">
+        <item name="android:textColor">@color/cyan_700</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="textStyleMontserratbold18" parent="textStyleMontserratbold18_1">
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:background">@drawable/rectangle_bg_cyan_600_radius_40</item>
+    </style>
+    <style name="textStylePoppinssemibold18">
+        <item name="android:textSize">@dimen/_18px</item>
+        <item name="android:textColor">@color/cyan_700</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="textStyleMontserratbold48_1" parent="textStyleMontserratbold36_1">
+        <item name="android:textSize">@dimen/_48px</item>
+    </style>
+    <style name="groupStyle">
+        <item name="android:background">@drawable/rectangle</item>
+    </style>
+    <style name="textStyleMontserratbold18_1" parent="textStyleMontserratbold36_1">
+        <item name="android:textSize">@dimen/_18px</item>
+        <item name="android:background">@drawable/rectangle_border_cyan_600_radius_40</item>
+    </style>
+    <style name="textStylePoppinsblack24">
+        <item name="android:textSize">@dimen/_24px</item>
+        <item name="android:textColor">@color/cyan_700</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">900</item>
+    </style>
+    <style name="groupStylewhite_A700">
+        <item name="android:background">@drawable/rectangle_bg_white_a700</item>
+    </style>
+    <style name="textStyleMontserratbold36_1">
+        <item name="android:textSize">@dimen/_36px</item>
+        <item name="android:textColor">@color/cyan_600</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+</resources>
